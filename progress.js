@@ -1,5 +1,6 @@
 const button = document.getElementById("complete-session");
 const counter = document.getElementById("revision-count");
+const resetButton = document.getElementById("reset-progress");
 
 const total = 5;
 const storageKey = "study-plan-completed-sessions";
@@ -29,6 +30,13 @@ button.addEventListener("click", () => {
 
     renderProgress();
   }
+});
+resetButton.addEventListener("click", () => {
+  completed = 0;
+
+  localStorage.removeItem(storageKey);
+
+  renderProgress();
 });
 
 // 4. Display recovered progress on page load
