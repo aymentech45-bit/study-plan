@@ -3,3 +3,17 @@
 
 # Generated log files
 *.log
+
+# Installed packages
+node_modules/
+
+# Generated production build
+dist/
+
+# Local environment configuation
+.env
+.env.*
+!.env.example
+
+# macos
+.DS_Store
