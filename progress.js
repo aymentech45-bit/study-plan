@@ -14,8 +14,7 @@ let completed = Number.isFinite(saved)
 
 // 2. Update the interface
 function renderProgress() {
-  counter.textContent =
-    `${completed} of ${total} study sessions completed.`;
+  counter.textContent = `${completed} of ${total} study sessions completed.`;
 
   button.disabled = completed >= total;
 }
@@ -41,3 +40,10 @@ resetButton.addEventListener("click", () => {
 
 // 4. Display recovered progress on page load
 renderProgress();
+const releaseLabel = document.getElementById("release-label");
+
+if (releaseLabel) {
+  const environment = import.meta.env.VITE_RELEASE_LABEL ?? "not configured";
+
+  releaseLabel.textContent = `Release environment: ${environment}`;
+}
