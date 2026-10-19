@@ -1,0 +1,26 @@
+{
+  "name": "study-plan-colleague",
+  "version": "1.0.0",
+  "description": "",
+  "main": "progress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aymentech45-bit/study-plan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aymentech45-bit/study-plan/issues"
+  },
+  "homepage": "https://github.com/aymentech45-bit/study-plan#readme",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
